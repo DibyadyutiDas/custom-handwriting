@@ -52,7 +52,7 @@ To contribute or try the current version locally, follow these steps:
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/handwriting-converter.git
+git clone https://github.com/DibyadyutiDas/custom-handwriting-converter.git
 cd handwriting-converter
 ```
 
