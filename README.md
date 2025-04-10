@@ -3,8 +3,7 @@
 ## Overview
 Welcome to the **AI-powered Text-to-Handwriting Converter**! This project allows you to transform plain text into a beautifully crafted handwritten-style image. We are currently building the core functionality and refining the AI model, with plans for a future web release!
 
-| This AI-powered service takes input text and converts it into your personalized handwriting style. Powered by **Node.js** on the backend, it uses advanced AI techniques to generate realistic handwritten text. A simple API is available for integration with other services. | ![Handwriting Example](https://github.com/DibyadyutiDas/portfolio/blob/main/text-handwriting_converter.png) |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+This AI-powered service takes input text and converts it into your personalized handwriting style. Powered by **Node.js** on the backend, it uses advanced AI techniques to generate realistic handwritten text. A simple API is available for integration with other services.
 
 ---
 
