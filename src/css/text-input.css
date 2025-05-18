@@ -1,0 +1,105 @@
+/* Text Input Section */
+.text-input-section {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.textarea-container {
+  position: relative;
+}
+
+#text-input {
+  width: 100%;
+  height: 12rem;
+  padding: 1rem;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 0.75rem;
+  background-color: var(--color-gray-50);
+  resize: none;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--color-gray-800);
+  transition: all 0.2s ease;
+}
+
+#text-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+#text-input::placeholder {
+  color: var(--color-gray-400);
+}
+
+.textarea-actions {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+#clear-button {
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-700);
+  border-radius: 9999px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+#clear-button:hover:not(:disabled) {
+  background-color: var(--color-gray-300);
+}
+
+#clear-button:disabled {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-400);
+}
+
+.form-footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.char-count {
+  font-size: 0.875rem;
+  color: var(--color-gray-500);
+}
+
+.convert-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.convert-button:not(:disabled) {
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+}
+
+.convert-button:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.4);
+}
+
+.convert-button:disabled {
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-400);
+}
+
+.convert-button svg {
+  margin-left: 0.5rem;
+}

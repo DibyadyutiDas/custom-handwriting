@@ -1,0 +1,136 @@
+/* Header Styles */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    height: 5rem;
+  }
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.pen-icon {
+  color: var(--color-primary);
+  height: 2rem;
+  width: 2rem;
+}
+
+.logo-text {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-gray-800);
+  letter-spacing: -0.025em;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.nav-link {
+  color: var(--color-gray-600);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+}
+
+.try-button {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+
+.try-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-button {
+  background: transparent;
+  color: var(--color-gray-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--color-gray-600);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: var(--color-primary);
+}
+
+.mobile-try-button {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.mobile-try-button:hover {
+  background-color: var(--color-primary-dark);
+}

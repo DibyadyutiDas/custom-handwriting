@@ -1,0 +1,129 @@
+/* Preview Section */
+.preview-section {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.download-button {
+  background-color: var(--color-blue-100, #DBEAFE);
+  color: var(--color-primary);
+  border-radius: 9999px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.download-button:hover:not(:disabled) {
+  background-color: var(--color-blue-200, #BFDBFE);
+}
+
+.download-button:disabled {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-400);
+}
+
+.preview-paper {
+  background-color: var(--color-amber-50);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 28rem;
+  background-image: repeating-linear-gradient(transparent, transparent 31px, #e5e5e5 32px);
+}
+
+.preview-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.empty-icon {
+  color: var(--color-gray-300);
+  margin-bottom: 1rem;
+}
+
+.empty-title {
+  font-size: 1.125rem;
+  color: var(--color-gray-400);
+}
+
+.empty-text {
+  font-size: 0.875rem;
+  color: var(--color-gray-400);
+  margin-top: 0.5rem;
+}
+
+.handwriting-content {
+  white-space: pre-wrap;
+  line-height: 2;
+  padding-top: 0.25rem;
+}
+
+.preview-footer {
+  margin-top: 1rem;
+}
+
+.preview-status {
+  display: flex;
+  align-items: center;
+}
+
+.status-indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+  background-color: var(--color-gray-300);
+}
+
+.status-indicator.loading {
+  background-color: var(--color-warning);
+}
+
+.status-indicator.success {
+  background-color: var(--color-success);
+}
+
+.status-text {
+  font-size: 0.875rem;
+  color: var(--color-gray-500);
+}
+
+.preview-actions {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.action-button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-gray-600);
+  transition: all 0.2s ease;
+}
+
+.action-button:hover {
+  background-color: var(--color-gray-50);
+}
