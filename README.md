@@ -1,4 +1,4 @@
-# ✍️ Text-to-Handwriting Converter
+# Text-to-Handwriting Converter
 
 ## 🧠 Overview
 
