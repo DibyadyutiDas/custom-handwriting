@@ -3,6 +3,31 @@
   background-color: var(--color-gray-900);
   color: var(--color-gray-200);
   padding: 3rem 0;
+  width: 100vw;
+  margin-top: auto;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.footer .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767px) {
+  .footer {
+    padding: 2rem 0;
+  }
+  
+  .footer .container {
+    padding: 0 1rem;
+  }
 }
 
 .footer-grid {
